@@ -212,6 +212,8 @@ const BrandsSection: React.FC = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center',
                   p: { xs: 3, md: 5 },
                   width: { xs: '100%', md: '60%' },
                 }}
@@ -240,7 +242,7 @@ const BrandsSection: React.FC = () => {
                   variant="contained"
                   color="primary"
                   size="large"
-                  sx={{ alignSelf: 'flex-start', px: 4, py: 1.5 }}
+                  sx={{ px: 4, py: 1.5 }}
                 >
                   Explore {brandCategories[tabValue].category}
                 </Button>

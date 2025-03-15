@@ -85,16 +85,6 @@ const Header: React.FC = () => {
                 fontSize: { xs: '1.2rem', md: '1.5rem' }
               }}
             >
-              <Box 
-                component="img"
-                src="/logo-placeholder.png" 
-                alt="Inspired Foods Logo"
-                sx={{ 
-                  height: 40, 
-                  mr: 1,
-                  display: { xs: 'none', sm: 'block' }
-                }}
-              />
               Inspired Foods
             </Typography>
 

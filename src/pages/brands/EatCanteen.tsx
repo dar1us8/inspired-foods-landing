@@ -213,7 +213,7 @@ const EatCanteen: React.FC = () => {
                       image={product.image}
                       alt={product.name}
                     />
-                    <CardContent sx={{ flexGrow: 1, p: 3 }}>
+                    <CardContent sx={{ flexGrow: 1, p: 3, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                       <Typography variant="h5" component="h3" gutterBottom fontWeight={600}>
                         {product.name}
                       </Typography>
@@ -223,7 +223,7 @@ const EatCanteen: React.FC = () => {
                       <Typography variant="body2" color="text.secondary" paragraph>
                         {product.details}
                       </Typography>
-                      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 2 }}>
+                      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, width: '100%', gap: 2 }}>
                         <Typography variant="h6" color="primary.main" fontWeight={600}>
                           {product.price}
                         </Typography>

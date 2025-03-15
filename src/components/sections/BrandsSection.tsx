@@ -13,11 +13,16 @@ import {
   useTheme
 } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Link as RouterLink } from 'react-router-dom';
 
 // Sample brand data
 const brandCategories = [
   {
     category: 'California Thai',
+    route: '/brands/california-thai',
+    description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
+    image: '/product-placeholder-1.jpg',
+    logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     products: [
       {
         id: 1,
@@ -44,6 +49,10 @@ const brandCategories = [
   },
   {
     category: 'Wikki Hut',
+    route: '/brands/wikki-hut',
+    description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
+    image: '/product-placeholder-4.jpg',
+    logo: '/inspired-foods-landing/logos/wikki-logo.png',
     products: [
       {
         id: 4,
@@ -70,6 +79,10 @@ const brandCategories = [
   },
   {
     category: 'Eat Canteen',
+    route: '/brands/eat-canteen',
+    description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
+    image: '/product-placeholder-7.jpg',
+    logo: '/inspired-foods-landing/logos/canteen-logo.png',
     products: [
       {
         id: 7,
@@ -168,6 +181,74 @@ const BrandsSection: React.FC = () => {
           </Tabs>
         </Box>
 
+        <Box sx={{ mb: 6 }}>
+          <motion.div
+            key={tabValue}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Card
+              sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                overflow: 'hidden',
+                borderRadius: 2,
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              <CardMedia
+                component="img"
+                sx={{
+                  width: { xs: '100%', md: '40%' },
+                  height: { xs: '300px', md: 'auto' },
+                  objectFit: 'cover',
+                }}
+                image={brandCategories[tabValue].image}
+                alt={brandCategories[tabValue].category}
+              />
+              <CardContent
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  p: { xs: 3, md: 5 },
+                  width: { xs: '100%', md: '60%' },
+                }}
+              >
+                {brandCategories[tabValue].logo && (
+                  <Box
+                    component="img"
+                    src={brandCategories[tabValue].logo}
+                    alt={`${brandCategories[tabValue].category} Logo`}
+                    sx={{
+                      maxWidth: '180px',
+                      height: 'auto',
+                      mb: 3
+                    }}
+                  />
+                )}
+                <Typography variant="h3" component="h3" gutterBottom fontWeight={600}>
+                  {brandCategories[tabValue].category}
+                </Typography>
+                <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4 }}>
+                  {brandCategories[tabValue].description}
+                </Typography>
+                <Button
+                  component={RouterLink}
+                  to={brandCategories[tabValue].route}
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  sx={{ alignSelf: 'flex-start', px: 4, py: 1.5 }}
+                >
+                  Explore {brandCategories[tabValue].category}
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </Box>
+
         <Grid container spacing={4}>
           {brandCategories[tabValue].products.map((product, index) => (
             <Grid item xs={12} sm={6} md={4} key={product.id}>
@@ -206,7 +287,12 @@ const BrandsSection: React.FC = () => {
                       <Typography variant="h6" color="primary.main" fontWeight={600}>
                         {product.price}
                       </Typography>
-                      <Button variant="outlined" color="primary">
+                      <Button 
+                        component={RouterLink}
+                        to={brandCategories[tabValue].route}
+                        variant="outlined" 
+                        color="primary"
+                      >
                         Learn More
                       </Button>
                     </Box>
@@ -219,6 +305,8 @@ const BrandsSection: React.FC = () => {
 
         <Box sx={{ textAlign: 'center', mt: 8 }}>
           <Button 
+            component={RouterLink}
+            to="/brands"
             variant="contained" 
             color="primary" 
             size="large"

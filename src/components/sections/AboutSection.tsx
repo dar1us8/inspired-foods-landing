@@ -76,7 +76,7 @@ const AboutSection: React.FC = () => {
                   fontSize: { xs: '2rem', md: '2.75rem' }
                 }}
               >
-                Our Story
+                Our Mission
               </Typography>
               <Typography 
                 variant="body1" 
@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
                 paragraph
                 sx={{ mb: 4 }}
               >
-                Founded in 2010, Inspired Foods began with a simple mission: to create food brands that are good for people and the planet. What started as a small operation has grown into a company that serves communities nationwide.
+                Food is subjective to people's taste, but no one can deny that preparing it is a craft that takes a certain degree of dedication and passion.
               </Typography>
               <Typography 
                 variant="body1" 
@@ -92,7 +92,7 @@ const AboutSection: React.FC = () => {
                 paragraph
                 sx={{ mb: 4 }}
               >
-                We believe that food should be nourishing, sustainable, and accessible to all. Our team of passionate food scientists, nutritionists, and culinary experts work together to develop innovative brands that meet the highest standards of quality and sustainability.
+                It is because of our passion and dedication that Inspired Foods Incorporated has over 40 years of combined service industry experience. Our business is to deliver worldly cuisines through branded restaurants and our goal is to continuously provide patrons with authentic dishes that are enriched with culture, tradition and a modern flare. We are dedicated to becoming an industry leader by maintaining an exceptional standard of quality, service and authenticity.
               </Typography>
             </motion.div>
           </Grid>

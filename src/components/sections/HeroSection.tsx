@@ -14,6 +14,13 @@ const HeroSection: React.FC = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Box 
       id="home"
@@ -62,6 +69,7 @@ const HeroSection: React.FC = () => {
                   variant="contained" 
                   color="primary" 
                   size="large"
+                  onClick={() => scrollToSection('#brands')}
                   sx={{ 
                     px: 4, 
                     py: 1.5,
@@ -74,13 +82,14 @@ const HeroSection: React.FC = () => {
                   variant="outlined" 
                   color="primary" 
                   size="large"
+                  onClick={() => scrollToSection('#about')}
                   sx={{ 
                     px: 4, 
                     py: 1.5,
                     fontSize: '1.1rem'
                   }}
                 >
-                  Our Story
+                  Our Mission
                 </Button>
               </Box>
             </motion.div>

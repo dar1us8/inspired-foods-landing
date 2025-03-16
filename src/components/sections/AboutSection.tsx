@@ -9,6 +9,9 @@ import {
   useTheme
 } from '@mui/material';
 import { motion } from 'framer-motion';
+import EcoIcon from "@mui/icons-material/Eco";
+import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
+import RecyclingIcon from "@mui/icons-material/Recycling";
 
 // Define features without icons for now
 const features = [

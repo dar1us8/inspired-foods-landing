@@ -233,11 +233,24 @@ const WikkiHut: React.FC = () => {
                       <Typography variant="body2" color="text.secondary" paragraph>
                         {product.details}
                       </Typography>
-                      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, width: '100%', gap: 2 }}>
-                        <Typography variant="h6" color="primary.main" fontWeight={600}>
+                      <Box sx={{ 
+                        display: 'flex', 
+                        flexDirection: { xs: 'column', sm: 'row' },
+                        justifyContent: 'center', 
+                        alignItems: 'center', 
+                        mt: 2, 
+                        width: '100%', 
+                        gap: 2,
+                        mx: 'auto'
+                      }}>
+                        <Typography variant="h6" color="primary.main" fontWeight={600} sx={{ textAlign: 'center' }}>
                           {product.price}
                         </Typography>
-                        <Button variant="outlined" color="primary">
+                        <Button 
+                          variant="outlined" 
+                          color="primary"
+                          sx={{ minWidth: '120px' }}
+                        >
                           Order Now
                         </Button>
                       </Box>

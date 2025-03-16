@@ -160,7 +160,13 @@ const BrandsPage: React.FC = () => {
                       <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, width: '100%', textAlign: 'center' }}>
                         {brand.description}
                       </Typography>
-                      <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                      <Box sx={{ 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center', 
+                        width: '100%',
+                        mx: 'auto'
+                      }}>
                         <Button
                           component={RouterLink}
                           to={brand.route}

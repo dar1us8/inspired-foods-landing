@@ -236,7 +236,13 @@ const BrandsSection: React.FC = () => {
                 <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, width: '100%', textAlign: 'center' }}>
                   {brandCategories[tabValue].description}
                 </Typography>
-                <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  alignItems: 'center', 
+                  width: '100%',
+                  mx: 'auto'
+                }}>
                   <Button
                     component={RouterLink}
                     to={brandCategories[tabValue].route}
@@ -295,8 +301,17 @@ const BrandsSection: React.FC = () => {
                     <Typography variant="body1" color="text.secondary" paragraph>
                       {product.description}
                     </Typography>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2, width: '100%', gap: 2 }}>
-                      <Typography variant="h6" color="primary.main" fontWeight={600}>
+                    <Box sx={{ 
+                      display: 'flex', 
+                      flexDirection: { xs: 'column', sm: 'row' },
+                      justifyContent: 'center', 
+                      alignItems: 'center', 
+                      mt: 2, 
+                      width: '100%', 
+                      gap: 2,
+                      mx: 'auto'
+                    }}>
+                      <Typography variant="h6" color="primary.main" fontWeight={600} sx={{ textAlign: 'center' }}>
                         {product.price}
                       </Typography>
                       <Button 
@@ -304,6 +319,7 @@ const BrandsSection: React.FC = () => {
                         to={brandCategories[tabValue].route}
                         variant="outlined" 
                         color="primary"
+                        sx={{ minWidth: '120px' }}
                       >
                         Learn More
                       </Button>

@@ -20,51 +20,51 @@ import Layout from '../../components/layout/Layout';
 const products = [
   {
     id: 1,
-    name: 'Coconut Bowl',
-    description: 'Tropical-inspired bowl with fresh fruits, coconut, and granola.',
-    image: '/product-placeholder-4.jpg',
+    name: 'Classic Burger',
+    description: 'Our signature burger with fresh ingredients and special sauce.',
+    image: '/inspired-foods-landing/product-placeholder-1.jpg',
     price: '$9.99',
-    details: 'Our Coconut Bowl is a refreshing blend of tropical fruits, shredded coconut, and crunchy granola. We use organic fruits and house-made granola for a nutritious and delicious breakfast or snack option.'
+    details: 'Our Classic Burger features a juicy patty made from locally sourced beef, topped with fresh lettuce, tomato, onion, and our special sauce. Served on a toasted brioche bun.'
   },
   {
     id: 2,
-    name: 'Island Smoothie',
-    description: 'Refreshing smoothie with tropical fruits and coconut water.',
-    image: '/product-placeholder-5.jpg',
-    price: '$7.49',
-    details: 'Our Island Smoothie combines ripe mangoes, pineapples, and bananas with coconut water for a hydrating and energizing drink. We use only the freshest fruits and never add artificial sweeteners or preservatives.'
+    name: 'Veggie Wrap',
+    description: 'Fresh vegetables and hummus wrapped in a whole grain tortilla.',
+    image: '/inspired-foods-landing/product-placeholder-2.jpg',
+    price: '$8.49',
+    details: 'Our Veggie Wrap is packed with fresh vegetables, including cucumber, bell peppers, carrots, and spinach. We add a generous spread of our house-made hummus and wrap it all in a whole grain tortilla.'
   },
   {
     id: 3,
-    name: 'Tiki Tacos',
-    description: 'Fusion tacos with tropical flavors and fresh ingredients.',
-    image: '/product-placeholder-6.jpg',
+    name: 'Chicken Sandwich',
+    description: 'Grilled chicken breast with avocado, bacon, and honey mustard.',
+    image: '/inspired-foods-landing/product-placeholder-3.jpg',
     price: '$10.99',
-    details: 'Our Tiki Tacos feature soft corn tortillas filled with grilled pineapple, marinated protein of your choice, and topped with a tangy mango salsa. It\'s a perfect blend of savory and sweet flavors.'
+    details: 'Our Chicken Sandwich features a tender grilled chicken breast, topped with creamy avocado, crispy bacon, and our signature honey mustard sauce. Served on a toasted ciabatta roll.'
   },
   {
     id: 4,
-    name: 'Tropical Acai Bowl',
-    description: 'Nutrient-rich acai bowl topped with fresh fruits and coconut flakes.',
-    image: '/product-placeholder-7.jpg',
-    price: '$11.99',
-    details: 'Our Tropical Acai Bowl starts with a base of blended acai berries and is topped with fresh fruits, coconut flakes, and a drizzle of honey. It\'s packed with antioxidants and makes for a perfect healthy meal.'
+    name: 'Caesar Salad',
+    description: 'Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.',
+    image: '/inspired-foods-landing/product-placeholder-4.jpg',
+    price: '$7.99',
+    details: 'Our Caesar Salad features crisp romaine lettuce, shaved parmesan cheese, and crunchy croutons. Tossed in our house-made Caesar dressing for a classic taste.'
   },
   {
     id: 5,
-    name: 'Hawaiian Poke Bowl',
-    description: 'Fresh fish or tofu with rice, vegetables, and tropical dressing.',
-    image: '/product-placeholder-8.jpg',
-    price: '$13.99',
-    details: 'Our Hawaiian Poke Bowl features your choice of fresh fish or tofu, served over rice with avocado, cucumber, and mango. It\'s dressed with our house-made tropical vinaigrette for a light and satisfying meal.'
+    name: 'Sweet Potato Fries',
+    description: 'Crispy sweet potato fries with a side of chipotle aioli.',
+    image: '/inspired-foods-landing/product-placeholder-5.jpg',
+    price: '$4.99',
+    details: 'Our Sweet Potato Fries are crispy on the outside and tender on the inside. Seasoned with a blend of spices and served with a side of our house-made chipotle aioli for dipping.'
   },
   {
     id: 6,
-    name: 'Coconut Chia Pudding',
-    description: 'Creamy chia pudding made with coconut milk and topped with tropical fruits.',
-    image: '/product-placeholder-9.jpg',
-    price: '$8.49',
-    details: 'Our Coconut Chia Pudding is made with organic chia seeds soaked in coconut milk and topped with fresh tropical fruits. It\'s a nutritious and delicious option for breakfast or dessert.'
+    name: 'Chocolate Milkshake',
+    description: 'Creamy chocolate milkshake topped with whipped cream and a cherry.',
+    image: '/inspired-foods-landing/product-placeholder-6.jpg',
+    price: '$5.99',
+    details: 'Our Chocolate Milkshake is made with premium chocolate ice cream, whole milk, and a touch of vanilla. Topped with whipped cream and a maraschino cherry for a classic treat.'
   }
 ];
 
@@ -107,13 +107,12 @@ const WikkiHut: React.FC = () => {
             >
               <Box
                 component="img"
-                src="/inspired-foods-landing/logos/wikki-logo.png" 
-                alt="Wikki Hut Logo"
+                src="/inspired-foods-landing/logos/wikki-hut-logo.png"
+                alt="Wikki Hut"
                 sx={{
-                  maxWidth: '250px',
+                  maxWidth: 200,
                   height: 'auto',
-                  mb: 2,
-                  margin: '0 auto'
+                  margin: '0 auto',
                 }}
               />
             </motion.div>

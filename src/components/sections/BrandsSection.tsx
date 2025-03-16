@@ -21,28 +21,28 @@ const brandCategories = [
     category: 'California Thai',
     route: '/brands/california-thai',
     description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
-    image: '/product-placeholder-1.jpg',
+    image: '/inspired-foods-landing/product-placeholder-1.jpg',
     logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     products: [
       {
         id: 1,
         name: 'Thai Green Curry',
         description: 'Authentic Thai green curry with fresh vegetables and aromatic herbs.',
-        image: '/product-placeholder-1.jpg',
+        image: '/inspired-foods-landing/product-placeholder-1.jpg',
         price: '$12.99'
       },
       {
         id: 2,
         name: 'Pad Thai',
         description: 'Classic Pad Thai with rice noodles, vegetables, and our signature sauce.',
-        image: '/product-placeholder-2.jpg',
+        image: '/inspired-foods-landing/product-placeholder-2.jpg',
         price: '$11.49'
       },
       {
         id: 3,
         name: 'Mango Sticky Rice',
         description: 'Sweet sticky rice with fresh mango, a traditional Thai dessert.',
-        image: '/product-placeholder-3.jpg',
+        image: '/inspired-foods-landing/product-placeholder-3.jpg',
         price: '$8.99'
       }
     ]
@@ -51,28 +51,28 @@ const brandCategories = [
     category: 'Wikki Hut',
     route: '/brands/wikki-hut',
     description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
-    image: '/product-placeholder-4.jpg',
+    image: '/inspired-foods-landing/product-placeholder-4.jpg',
     logo: '/inspired-foods-landing/logos/wikki-logo.png',
     products: [
       {
         id: 4,
         name: 'Coconut Bowl',
         description: 'Tropical-inspired bowl with fresh fruits, coconut, and granola.',
-        image: '/product-placeholder-4.jpg',
+        image: '/inspired-foods-landing/product-placeholder-4.jpg',
         price: '$9.99'
       },
       {
         id: 5,
         name: 'Island Smoothie',
         description: 'Refreshing smoothie with tropical fruits and coconut water.',
-        image: '/product-placeholder-5.jpg',
+        image: '/inspired-foods-landing/product-placeholder-5.jpg',
         price: '$7.49'
       },
       {
         id: 6,
         name: 'Tiki Tacos',
         description: 'Fusion tacos with tropical flavors and fresh ingredients.',
-        image: '/product-placeholder-6.jpg',
+        image: '/inspired-foods-landing/product-placeholder-6.jpg',
         price: '$10.99'
       }
     ]
@@ -81,28 +81,28 @@ const brandCategories = [
     category: 'Eat Canteen',
     route: '/brands/eat-canteen',
     description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
-    image: '/product-placeholder-7.jpg',
+    image: '/inspired-foods-landing/product-placeholder-7.jpg',
     logo: '/inspired-foods-landing/logos/canteen-logo.png',
     products: [
       {
         id: 7,
         name: 'Harvest Bowl',
         description: 'Nutritious bowl with seasonal vegetables, grains, and protein.',
-        image: '/product-placeholder-7.jpg',
+        image: '/inspired-foods-landing/product-placeholder-7.jpg',
         price: '$11.99'
       },
       {
         id: 8,
         name: 'Superfood Salad',
         description: 'Nutrient-packed salad with kale, quinoa, and superfoods.',
-        image: '/product-placeholder-8.jpg',
+        image: '/inspired-foods-landing/product-placeholder-8.jpg',
         price: '$10.99'
       },
       {
         id: 9,
         name: 'Power Sandwich',
         description: 'Hearty sandwich with whole grain bread, lean protein, and vegetables.',
-        image: '/product-placeholder-9.jpg',
+        image: '/inspired-foods-landing/product-placeholder-9.jpg',
         price: '$9.49'
       }
     ]

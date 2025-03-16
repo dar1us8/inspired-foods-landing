@@ -20,51 +20,51 @@ import Layout from '../../components/layout/Layout';
 const products = [
   {
     id: 1,
-    name: 'Harvest Bowl',
-    description: 'Nutritious bowl with seasonal vegetables, grains, and protein.',
-    image: '/product-placeholder-7.jpg',
-    price: '$11.99',
-    details: 'Our Harvest Bowl features a base of quinoa and brown rice, topped with roasted seasonal vegetables, your choice of protein, and our house-made tahini dressing. It\'s a complete meal packed with nutrients and flavor.'
+    name: 'Quinoa Bowl',
+    description: 'Nutritious quinoa bowl with roasted vegetables and tahini dressing.',
+    image: '/inspired-foods-landing/product-placeholder-1.jpg',
+    price: '$10.99',
+    details: 'Our Quinoa Bowl features organic quinoa, roasted seasonal vegetables, and a creamy tahini dressing. It\'s packed with protein and fiber, making it a perfect choice for a nutritious meal.'
   },
   {
     id: 2,
-    name: 'Superfood Salad',
-    description: 'Nutrient-packed salad with kale, quinoa, and superfoods.',
-    image: '/product-placeholder-8.jpg',
-    price: '$10.99',
-    details: 'Our Superfood Salad combines fresh kale, protein-rich quinoa, antioxidant-packed berries, and crunchy seeds. Dressed with our apple cider vinaigrette, it\'s a nutritional powerhouse that doesn\'t compromise on taste.'
+    name: 'Avocado Toast',
+    description: 'Whole grain toast topped with avocado, microgreens, and seeds.',
+    image: '/inspired-foods-landing/product-placeholder-2.jpg',
+    price: '$8.99',
+    details: 'Our Avocado Toast is made with freshly baked whole grain bread, ripe avocados, microgreens, and a sprinkle of seeds. We add a touch of lemon juice and red pepper flakes for extra flavor.'
   },
   {
     id: 3,
-    name: 'Power Sandwich',
-    description: 'Hearty sandwich with whole grain bread, lean protein, and vegetables.',
-    image: '/product-placeholder-9.jpg',
-    price: '$9.49',
-    details: 'Our Power Sandwich is made with locally-baked whole grain bread, filled with lean protein, avocado, sprouts, and vegetables. It\'s a satisfying meal that provides sustained energy throughout your day.'
+    name: 'Lentil Soup',
+    description: 'Hearty lentil soup with vegetables and aromatic herbs.',
+    image: '/inspired-foods-landing/product-placeholder-3.jpg',
+    price: '$7.49',
+    details: 'Our Lentil Soup is made with organic lentils, fresh vegetables, and a blend of aromatic herbs and spices. It\'s simmered slowly to develop rich flavors and served with a slice of whole grain bread.'
   },
   {
     id: 4,
-    name: 'Energy Wrap',
-    description: 'Protein-packed wrap with hummus, vegetables, and quinoa.',
-    image: '/product-placeholder-1.jpg',
+    name: 'Falafel Wrap',
+    description: 'Crispy falafel with fresh vegetables and tahini sauce in a whole wheat wrap.',
+    image: '/inspired-foods-landing/product-placeholder-4.jpg',
     price: '$9.99',
-    details: 'Our Energy Wrap features a whole grain tortilla filled with house-made hummus, quinoa, roasted vegetables, and fresh greens. It\'s a perfect on-the-go meal that will keep you energized and satisfied.'
+    details: 'Our Falafel Wrap features house-made falafel, fresh vegetables, and a creamy tahini sauce, all wrapped in a whole wheat tortilla. It\'s a satisfying and flavorful plant-based meal.'
   },
   {
     id: 5,
-    name: 'Protein Smoothie',
-    description: 'Creamy smoothie with plant-based protein, fruits, and superfoods.',
-    image: '/product-placeholder-2.jpg',
-    price: '$8.49',
-    details: 'Our Protein Smoothie blends plant-based protein with banana, berries, spinach, and almond milk. It\'s a delicious way to refuel after a workout or to start your day with a nutritional boost.'
+    name: 'Berry Smoothie',
+    description: 'Refreshing smoothie with mixed berries, banana, and almond milk.',
+    image: '/inspired-foods-landing/product-placeholder-5.jpg',
+    price: '$6.99',
+    details: 'Our Berry Smoothie is a blend of mixed berries, banana, and almond milk. We add a touch of honey for sweetness and a scoop of plant-based protein powder for an extra nutritional boost.'
   },
   {
     id: 6,
-    name: 'Grain Bowl',
-    description: 'Customizable bowl with your choice of grains, vegetables, and protein.',
-    image: '/product-placeholder-3.jpg',
-    price: '$12.99',
-    details: 'Our Grain Bowl lets you build your perfect meal. Choose your base (quinoa, brown rice, or mixed greens), add seasonal vegetables, select your protein, and finish with one of our signature sauces for a personalized, nutritious meal.'
+    name: 'Chia Pudding',
+    description: 'Creamy chia pudding with coconut milk and fresh fruits.',
+    image: '/inspired-foods-landing/product-placeholder-6.jpg',
+    price: '$7.99',
+    details: 'Our Chia Pudding is made with organic chia seeds soaked in coconut milk and topped with fresh seasonal fruits. It\'s a nutritious and delicious option for breakfast or a snack.'
   }
 ];
 
@@ -107,7 +107,7 @@ const EatCanteen: React.FC = () => {
             >
               <Box
                 component="img"
-                src="/inspired-foods-landing/logos/canteen-logo.png" 
+                src="/inspired-foods-landing/logos/eat-canteen-logo.png" 
                 alt="Eat Canteen Logo"
                 sx={{
                   maxWidth: '250px',
@@ -154,7 +154,7 @@ const EatCanteen: React.FC = () => {
 
           <Box 
             component="img"
-            src="/product-placeholder-7.jpg"
+            src="/inspired-foods-landing/product-placeholder-7.jpg"
             alt="Eat Canteen"
             sx={{
               width: '100%',

@@ -22,7 +22,7 @@ const products = [
     id: 1,
     name: 'Thai Green Curry',
     description: 'Authentic Thai green curry with fresh vegetables and aromatic herbs.',
-    image: '/product-placeholder-1.jpg',
+    image: '/inspired-foods-landing/product-placeholder-1.jpg',
     price: '$12.99',
     details: 'Our Thai Green Curry is made with fresh ingredients, including lemongrass, galangal, and kaffir lime leaves. We use locally sourced vegetables and sustainable protein options to create a delicious and environmentally friendly meal.'
   },
@@ -30,7 +30,7 @@ const products = [
     id: 2,
     name: 'Pad Thai',
     description: 'Classic Pad Thai with rice noodles, vegetables, and our signature sauce.',
-    image: '/product-placeholder-2.jpg',
+    image: '/inspired-foods-landing/product-placeholder-2.jpg',
     price: '$11.49',
     details: 'Our Pad Thai features rice noodles, fresh bean sprouts, green onions, and eggs, all stir-fried in our signature tamarind sauce. We offer vegetarian, vegan, and protein options to suit your dietary preferences.'
   },
@@ -38,7 +38,7 @@ const products = [
     id: 3,
     name: 'Mango Sticky Rice',
     description: 'Sweet sticky rice with fresh mango, a traditional Thai dessert.',
-    image: '/product-placeholder-3.jpg',
+    image: '/inspired-foods-landing/product-placeholder-3.jpg',
     price: '$8.99',
     details: 'Our Mango Sticky Rice is a sweet treat made with glutinous rice, fresh ripe mangoes, and coconut milk. We source our mangoes from sustainable farms and use organic coconut milk for a delicious and guilt-free dessert.'
   },
@@ -46,7 +46,7 @@ const products = [
     id: 4,
     name: 'Tom Yum Soup',
     description: 'Spicy and sour soup with lemongrass, lime, and fresh herbs.',
-    image: '/product-placeholder-4.jpg',
+    image: '/inspired-foods-landing/product-placeholder-4.jpg',
     price: '$10.99',
     details: 'Our Tom Yum Soup is a perfect balance of spicy, sour, and savory flavors. Made with fresh lemongrass, kaffir lime leaves, galangal, and mushrooms, this soup is both delicious and nutritious.'
   },
@@ -54,7 +54,7 @@ const products = [
     id: 5,
     name: 'Thai Basil Stir Fry',
     description: 'Aromatic stir fry with Thai basil, vegetables, and your choice of protein.',
-    image: '/product-placeholder-5.jpg',
+    image: '/inspired-foods-landing/product-placeholder-5.jpg',
     price: '$13.99',
     details: 'Our Thai Basil Stir Fry combines fresh Thai basil with colorful vegetables and your choice of protein. The dish is seasoned with our special sauce that brings out the aromatic flavors of the basil.'
   },
@@ -62,7 +62,7 @@ const products = [
     id: 6,
     name: 'Coconut Ice Cream',
     description: 'Creamy coconut ice cream with toasted peanuts and sticky rice.',
-    image: '/product-placeholder-6.jpg',
+    image: '/inspired-foods-landing/product-placeholder-6.jpg',
     price: '$7.99',
     details: 'Our Coconut Ice Cream is made with real coconut milk and topped with toasted peanuts and a side of sweet sticky rice. It\'s the perfect way to cool down and satisfy your sweet tooth.'
   }
@@ -154,7 +154,7 @@ const CaliforniaThai: React.FC = () => {
 
           <Box 
             component="img"
-            src="/product-placeholder-1.jpg"
+            src="/inspired-foods-landing/product-placeholder-1.jpg"
             alt="California Thai"
             sx={{
               width: '100%',

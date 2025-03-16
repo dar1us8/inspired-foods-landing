@@ -64,7 +64,13 @@ const HeroSection: React.FC = () => {
               >
                 Home to California Thai, Wikki Hut, and Eat Canteen - innovative food brands that inspire healthier living and a better planet.
               </Typography>
-              <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+              <Box sx={{ 
+                display: 'flex', 
+                gap: 2, 
+                flexWrap: 'wrap',
+                justifyContent: { xs: 'center', md: 'flex-start' },
+                width: '100%'
+              }}>
                 <Button 
                   variant="contained" 
                   color="primary" 
@@ -101,7 +107,9 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               style={{ 
                 display: 'flex',
-                justifyContent: isMobile ? 'center' : 'flex-end',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100%',
                 marginTop: isMobile ? '2rem' : 0
               }}
             >
@@ -114,6 +122,7 @@ const HeroSection: React.FC = () => {
                   height: 'auto',
                   borderRadius: 3,
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                  margin: '0 auto'
                 }}
               />
             </motion.div>

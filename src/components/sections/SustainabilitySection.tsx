@@ -90,6 +90,12 @@ const SustainabilitySection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100%'
+              }}
             >
               <Box
                 component="img"
@@ -100,6 +106,7 @@ const SustainabilitySection: React.FC = () => {
                   height: 'auto',
                   borderRadius: 3,
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                  margin: '0 auto'
                 }}
               />
             </motion.div>
@@ -157,8 +164,13 @@ const SustainabilitySection: React.FC = () => {
                       <Typography variant="body1" color="text.secondary" paragraph>
                         {goal.description}
                       </Typography>
-                      <Box sx={{ mt: 3 }}>
-                        <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
+                      <Box sx={{ mt: 3, width: '100%' }}>
+                        <Box sx={{ 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          mb: 1,
+                          width: '100%'
+                        }}>
                           <Typography variant="body2" color="text.secondary">
                             Progress
                           </Typography>
@@ -175,7 +187,8 @@ const SustainabilitySection: React.FC = () => {
                             backgroundColor: theme.palette.grey[200],
                             '& .MuiLinearProgress-bar': {
                               borderRadius: 4,
-                            }
+                            },
+                            width: '100%'
                           }}
                         />
                       </Box>

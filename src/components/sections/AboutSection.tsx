@@ -45,6 +45,12 @@ const AboutSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100%'
+              }}
             >
               <Box
                 component="img"
@@ -55,6 +61,7 @@ const AboutSection: React.FC = () => {
                   height: 'auto',
                   borderRadius: 3,
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                  margin: '0 auto'
                 }}
               />
             </motion.div>

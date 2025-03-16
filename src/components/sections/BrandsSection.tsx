@@ -226,26 +226,29 @@ const BrandsSection: React.FC = () => {
                     sx={{
                       maxWidth: '180px',
                       height: 'auto',
-                      mb: 3
+                      mb: 3,
+                      mx: 'auto',
                     }}
                   />
                 )}
-                <Typography variant="h3" component="h3" gutterBottom fontWeight={600}>
+                <Typography variant="h3" component="h3" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                   {brandCategories[tabValue].category}
                 </Typography>
-                <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4 }}>
+                <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, width: '100%', textAlign: 'center' }}>
                   {brandCategories[tabValue].description}
                 </Typography>
-                <Button
-                  component={RouterLink}
-                  to={brandCategories[tabValue].route}
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  sx={{ px: 4, py: 1.5 }}
-                >
-                  Explore {brandCategories[tabValue].category}
-                </Button>
+                <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                  <Button
+                    component={RouterLink}
+                    to={brandCategories[tabValue].route}
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    sx={{ px: 4, py: 1.5 }}
+                  >
+                    Explore {brandCategories[tabValue].category}
+                  </Button>
+                </Box>
               </CardContent>
             </Card>
           </motion.div>

@@ -148,26 +148,29 @@ const BrandsPage: React.FC = () => {
                           sx={{
                             maxWidth: '180px',
                             height: 'auto',
-                            mb: 3
+                            mb: 3,
+                            mx: 'auto'
                           }}
                         />
                       )}
-                      <Typography variant="h3" component="h2" gutterBottom fontWeight={600}>
+                      <Typography variant="h3" component="h2" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                         {brand.name}
                       </Typography>
-                      <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4 }}>
+                      <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, width: '100%', textAlign: 'center' }}>
                         {brand.description}
                       </Typography>
-                      <Button
-                        component={RouterLink}
-                        to={brand.route}
-                        variant="contained"
-                        color="primary"
-                        size="large"
-                        sx={{ px: 4, py: 1.5 }}
-                      >
-                        Explore {brand.name}
-                      </Button>
+                      <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                        <Button
+                          component={RouterLink}
+                          to={brand.route}
+                          variant="contained"
+                          color="primary"
+                          size="large"
+                          sx={{ px: 4, py: 1.5 }}
+                        >
+                          Explore {brand.name}
+                        </Button>
+                      </Box>
                     </CardContent>
                   </Card>
                 </motion.div>

@@ -153,7 +153,7 @@ const WikkiHut: React.FC = () => {
 
           <Box 
             component="img"
-            src="/product-placeholder-5.jpg"
+            src="/inspired-foods-landing/product-placeholder-5.jpg"
             alt="Wikki Hut"
             sx={{
               width: '100%',

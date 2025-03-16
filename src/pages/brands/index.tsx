@@ -23,6 +23,7 @@ const brands = [
     name: 'California Thai',
     description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
     image: '/product-placeholder-1.jpg',
+    logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     route: '/brands/california-thai'
   },
   {
@@ -30,6 +31,7 @@ const brands = [
     name: 'Wikki Hut',
     description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
     image: '/product-placeholder-4.jpg',
+    logo: '/inspired-foods-landing/logos/wikki-logo.png',
     route: '/brands/wikki-hut'
   },
   {
@@ -37,6 +39,7 @@ const brands = [
     name: 'Eat Canteen',
     description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
     image: '/product-placeholder-7.jpg',
+    logo: '/inspired-foods-landing/logos/canteen-logo.png',
     route: '/brands/eat-canteen'
   }
 ];
@@ -94,16 +97,18 @@ const BrandsPage: React.FC = () => {
             </Typography>
           </motion.div>
 
-          <Grid container spacing={6}>
+          <Grid container spacing={6} justifyContent="center">
             {brands.map((brand, index) => (
-              <Grid item xs={12} key={brand.id}>
+              <Grid item xs={12} key={brand.id} sx={{ display: 'flex', justifyContent: 'center' }}>
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
+                  style={{ width: '100%', maxWidth: '1200px', display: 'flex', justifyContent: 'center' }}
                 >
                   <Card
                     sx={{
+                      width: '100%',
                       display: 'flex',
                       flexDirection: { xs: 'column', md: 'row' },
                       overflow: 'hidden',
@@ -138,6 +143,17 @@ const BrandsPage: React.FC = () => {
                         width: { xs: '100%', md: '60%' },
                       }}
                     >
+                      <Box
+                        component="img"
+                        src={brand.logo}
+                        alt={`${brand.name} Logo`}
+                        sx={{
+                          maxWidth: '200px',
+                          height: 'auto',
+                          mb: 3,
+                          margin: '0 auto'
+                        }}
+                      />
                       <Typography variant="h3" component="h2" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                         {brand.name}
                       </Typography>

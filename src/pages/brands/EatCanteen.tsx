@@ -94,10 +94,29 @@ const EatCanteen: React.FC = () => {
           <Box 
             sx={{ 
               textAlign: 'center',
-              mb: 4
+              mb: 4,
+              display: 'flex',
+              justifyContent: 'center',
+              width: '100%'
             }}
           >
-            {/* Logo section removed */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Box
+                component="img"
+                src="/inspired-foods-landing/logos/canteen-logo.png" 
+                alt="Eat Canteen Logo"
+                sx={{
+                  maxWidth: '250px',
+                  height: 'auto',
+                  mb: 2,
+                  margin: '0 auto'
+                }}
+              />
+            </motion.div>
           </Box>
 
           <motion.div
@@ -170,17 +189,20 @@ const EatCanteen: React.FC = () => {
             Our Menu
           </Typography>
 
-          <Grid container spacing={4}>
+          <Grid container spacing={4} justifyContent="center">
             {products.map((product, index) => (
-              <Grid item xs={12} sm={6} md={4} key={product.id}>
+              <Grid item xs={12} sm={6} md={4} key={product.id} sx={{ display: 'flex', justifyContent: 'center' }}>
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
+                  style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
                 >
                   <Card 
                     sx={{ 
                       height: '100%',
+                      width: '100%',
+                      maxWidth: '400px',
                       display: 'flex',
                       flexDirection: 'column',
                       transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',

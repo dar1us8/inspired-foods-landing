@@ -22,6 +22,7 @@ const brandCategories = [
     route: '/brands/california-thai',
     description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
     image: '/product-placeholder-1.jpg',
+    logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     products: [
       {
         id: 1,
@@ -51,6 +52,7 @@ const brandCategories = [
     route: '/brands/wikki-hut',
     description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
     image: '/product-placeholder-4.jpg',
+    logo: '/inspired-foods-landing/logos/wikki-logo.png',
     products: [
       {
         id: 4,
@@ -80,6 +82,7 @@ const brandCategories = [
     route: '/brands/eat-canteen',
     description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
     image: '/product-placeholder-7.jpg',
+    logo: '/inspired-foods-landing/logos/canteen-logo.png',
     products: [
       {
         id: 7,
@@ -216,6 +219,17 @@ const BrandsSection: React.FC = () => {
                   width: { xs: '100%', md: '60%' },
                 }}
               >
+                <Box
+                  component="img"
+                  src={brandCategories[tabValue].logo}
+                  alt={`${brandCategories[tabValue].category} Logo`}
+                  sx={{
+                    maxWidth: '200px',
+                    height: 'auto',
+                    mb: 3,
+                    margin: '0 auto'
+                  }}
+                />
                 <Typography variant="h3" component="h3" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                   {brandCategories[tabValue].category}
                 </Typography>
@@ -239,18 +253,21 @@ const BrandsSection: React.FC = () => {
           </motion.div>
         </Box>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={4} justifyContent="center">
           {brandCategories[tabValue].products.map((product, index) => (
-            <Grid item xs={12} sm={6} md={4} key={product.id}>
+            <Grid item xs={12} sm={6} md={4} key={product.id} sx={{ display: 'flex', justifyContent: 'center' }}>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
               >
                 <Card 
                   sx={{ 
                     height: '100%',
+                    width: '100%',
+                    maxWidth: '400px',
                     display: 'flex',
                     flexDirection: 'column',
                     transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',

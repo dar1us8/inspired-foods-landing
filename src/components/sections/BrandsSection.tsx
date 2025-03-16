@@ -218,19 +218,6 @@ const BrandsSection: React.FC = () => {
                   width: { xs: '100%', md: '60%' },
                 }}
               >
-                {brandCategories[tabValue].logo && (
-                  <Box
-                    component="img"
-                    src={brandCategories[tabValue].logo}
-                    alt={`${brandCategories[tabValue].category} Logo`}
-                    sx={{
-                      maxWidth: '180px',
-                      height: 'auto',
-                      mb: 3,
-                      mx: 'auto',
-                    }}
-                  />
-                )}
                 <Typography variant="h3" component="h3" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                   {brandCategories[tabValue].category}
                 </Typography>

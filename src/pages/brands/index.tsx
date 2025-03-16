@@ -140,19 +140,6 @@ const BrandsPage: React.FC = () => {
                         width: { xs: '100%', md: '60%' },
                       }}
                     >
-                      {brand.logo && (
-                        <Box
-                          component="img"
-                          src={brand.logo}
-                          alt={`${brand.name} Logo`}
-                          sx={{
-                            maxWidth: '180px',
-                            height: 'auto',
-                            mb: 3,
-                            mx: 'auto'
-                          }}
-                        />
-                      )}
                       <Typography variant="h3" component="h2" gutterBottom fontWeight={600} sx={{ width: '100%', textAlign: 'center' }}>
                         {brand.name}
                       </Typography>

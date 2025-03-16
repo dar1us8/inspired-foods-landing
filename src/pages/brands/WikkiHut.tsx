@@ -91,30 +91,13 @@ const WikkiHut: React.FC = () => {
             <Typography color="text.primary">Wikki Hut</Typography>
           </Breadcrumbs>
 
-          {/* Logo Section */}
           <Box 
             sx={{ 
-              display: 'flex',
-              justifyContent: 'center',
+              textAlign: 'center',
               mb: 4
             }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Box
-                component="img"
-                src="/inspired-foods-landing/logos/wikki-logo.png" 
-                alt="Wikki Hut Logo"
-                sx={{
-                  maxWidth: '250px',
-                  height: 'auto',
-                  mb: 2
-                }}
-              />
-            </motion.div>
+            {/* Logo section removed */}
           </Box>
 
           <motion.div
@@ -212,6 +195,11 @@ const WikkiHut: React.FC = () => {
                       height="200"
                       image={product.image}
                       alt={product.name}
+                      sx={{
+                        objectFit: 'cover',
+                        width: '100%',
+                        margin: '0 auto'
+                      }}
                     />
                     <CardContent sx={{ flexGrow: 1, p: 3, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                       <Typography variant="h5" component="h3" gutterBottom fontWeight={600}>

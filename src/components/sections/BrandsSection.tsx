@@ -22,7 +22,6 @@ const brandCategories = [
     route: '/brands/california-thai',
     description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
     image: '/product-placeholder-1.jpg',
-    logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     products: [
       {
         id: 1,
@@ -52,7 +51,6 @@ const brandCategories = [
     route: '/brands/wikki-hut',
     description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
     image: '/product-placeholder-4.jpg',
-    logo: '/inspired-foods-landing/logos/wikki-logo.png',
     products: [
       {
         id: 4,
@@ -82,7 +80,6 @@ const brandCategories = [
     route: '/brands/eat-canteen',
     description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
     image: '/product-placeholder-7.jpg',
-    logo: '/inspired-foods-landing/logos/canteen-logo.png',
     products: [
       {
         id: 7,
@@ -203,6 +200,7 @@ const BrandsSection: React.FC = () => {
                   width: { xs: '100%', md: '40%' },
                   height: { xs: '300px', md: 'auto' },
                   objectFit: 'cover',
+                  margin: '0 auto'
                 }}
                 image={brandCategories[tabValue].image}
                 alt={brandCategories[tabValue].category}
@@ -267,6 +265,11 @@ const BrandsSection: React.FC = () => {
                     height="200"
                     image={product.image}
                     alt={product.name}
+                    sx={{
+                      objectFit: 'cover',
+                      width: '100%',
+                      margin: '0 auto'
+                    }}
                   />
                   <CardContent sx={{ flexGrow: 1, p: 3, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Typography variant="h5" component="h3" gutterBottom fontWeight={600}>

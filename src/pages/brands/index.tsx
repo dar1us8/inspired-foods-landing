@@ -23,7 +23,6 @@ const brands = [
     name: 'California Thai',
     description: 'Authentic Thai cuisine with a California twist, using fresh, locally-sourced ingredients',
     image: '/product-placeholder-1.jpg',
-    logo: '/inspired-foods-landing/logos/california-thai-logo.png',
     route: '/brands/california-thai'
   },
   {
@@ -31,7 +30,6 @@ const brands = [
     name: 'Wikki Hut',
     description: 'Tropical-inspired healthy foods and beverages that bring the island vibes to your day',
     image: '/product-placeholder-4.jpg',
-    logo: '/inspired-foods-landing/logos/wikki-logo.png',
     route: '/brands/wikki-hut'
   },
   {
@@ -39,7 +37,6 @@ const brands = [
     name: 'Eat Canteen',
     description: 'Nutritious, wholesome meals designed to fuel your active lifestyle',
     image: '/product-placeholder-7.jpg',
-    logo: '/inspired-foods-landing/logos/canteen-logo.png',
     route: '/brands/eat-canteen'
   }
 ];
@@ -125,6 +122,7 @@ const BrandsPage: React.FC = () => {
                         width: { xs: '100%', md: '40%' },
                         height: { xs: '300px', md: 'auto' },
                         objectFit: 'cover',
+                        margin: '0 auto'
                       }}
                       image={brand.image}
                       alt={brand.name}
